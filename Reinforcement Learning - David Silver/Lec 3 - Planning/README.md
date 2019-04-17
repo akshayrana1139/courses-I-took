@@ -9,11 +9,11 @@ MDPs satisfy both the properties as Bellman Eqn breaks down the optimal value fu
 DP assumes full knowledge of the MDP and is used for planning.
 
 Prediction:
-Input: MDP (S, A, P, R, gamma) and policy pi
+Input: MDP (S, A, P, R, &gamma;) and policy pi
 Output: Value function .. v-pi
 
 Control: (best thing to do in MDP.. full optimization).. So out of all the policies, what is the best policy that will give the best value function..
-Input: MDP (S, A, P, R, gamma)
+Input: MDP (S, A, P, R, &gamma;)
 OUtput: Optimal value function .. v-star and the optimal policy.. pi-star
 
 <b>Iterative Policy Evaluation</b>:
@@ -26,7 +26,7 @@ We'll sweep all the states in one iteration and then update the entire v vector 
 
 We gonna put values from last iteration and compute one single new value for next step.
 
-v<sup>k+1</sup>  = R<sup>&pi;</sup> + &gamma; P<sup>&pi;</sup> v<sup>k</sup>  
+v<sup>k+1</sup>  = R<sup>&pi;</sup> + &&gamma;; P<sup>&pi;</sup> v<sup>k</sup>  
 
 Example: Small Grid World
 Using a  random value function and using that to evaluate the optimal value funtion..
@@ -36,7 +36,7 @@ Using a  random value function and using that to evaluate the optimal value funt
 
 Evaluate a policy &pi;
 
-v<sub>&pi;</sub>(s) = E[R<sub>t+1</sub> + &gamma;R<sub>t+2</sub> + ... | S<sub>t</sub> = s]
+v<sub>&pi;</sub>(s) = E[R<sub>t+1</sub> + &&gamma;;R<sub>t+2</sub> + ... | S<sub>t</sub> = s]
 
 Improve the policy by acting greedly with respect to v<sub>&pi;</sub>
 

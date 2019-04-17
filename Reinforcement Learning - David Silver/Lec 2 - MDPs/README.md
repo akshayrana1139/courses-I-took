@@ -10,7 +10,7 @@ State Transition Probability from all state s to successor state s' == So we hav
 P ===  [:  , :  , :  , ... :   ] 
        [Pn1, Pn2, Pn3, ... Pnn ]
 
-##
+
 
 MARKOV CHAIN PROCESS: is a tuple (S, P) 
 S: is a finite set of states s
