@@ -6,7 +6,7 @@ For Dynamic Programming, we need
 
 MDPs satisfy both the properties as Bellman Eqn breaks down the optimal value function into pieces.. [ Optimal behaviour of immediate step + value fn of next steps ], We can store and reuse the value functions.. 
 
-DP assumes full knowledge of the MDP and is used for planning..
+DP assumes full knowledge of the MDP and is used for planning.
 
 Prediction:
 Input: MDP (S, A, P, R, gamma) and policy pi
