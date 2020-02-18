@@ -158,8 +158,8 @@ They have better convergence property than iteration methods.
 
 https://datascience.stackexchange.com/questions/26938/what-exactly-is-bootstrapping-in-reinforcement-learning
 
-```
-Bootstrapping in RL can be read as "using one or more estimated values in the update step for the same kind of estimated value".
+
+### Bootstrapping in RL can be read as "using one or more estimated values in the update step for the same kind of estimated value".
 
 In most TD update rules, you will see something like this SARSA(0) update:
 
@@ -176,7 +176,6 @@ Where Gt was the total discounted reward at time t, assuming in this update, tha
 The main disadvantage of bootstrapping is that it is biased towards whatever your starting values of Q(s′,a′) (or V(s′)) are. Those are are most likely wrong, and the update system can be unstable as a whole because of too much self-reference and not enough real data - this is a problem with off-policy learning (e.g. Q-learning) using neural networks.
 
 Without bootstrapping, using longer trajectories, there is often high variance instead, which, in practice, means you need more samples before the estimates converge. So, despite the problems with bootstrapping, if it can be made to work, it may learn significantly faster, and is often preferred over Monte Carlo approaches.
-```
 
 
 
